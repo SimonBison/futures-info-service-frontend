@@ -104,5 +104,12 @@
       }
     }
   },
-  "defaultProject": "futures-info-service-frontend"
+  "defaultProject": "futures-info-service-frontend",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "spec": false
+      }
+    }
+  }
 }
