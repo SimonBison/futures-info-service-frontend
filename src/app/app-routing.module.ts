@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {FuturesComponent} from "./futures/futures.component";
+import {AddFutureComponent} from "./add-future/add-future.component";
+import { FuturesComponent } from './futures/futures.component';
 
 
 const routes: Routes = [
-  { path: 'futures', component: FuturesComponent},
+
+  { path:'', component: FuturesComponent },
+  { path:'addcontract', component: AddFutureComponent},
 ];
 
 @NgModule({
