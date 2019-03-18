@@ -1,0 +1,26 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Futures Contract</h2>
+  <form>
+    <div class="form-group">
+      <label for="futuresGroup">Futures Group:</label>
+      <input type="futuresGroup" [(ngModel)]="user.futuresGroup" placeholder="Add Futures Group" name="futuresGroup" class="form-control" id="futuresGroup">
+    </div>
+
+    <div class="form-group">
+      <label for="futuresMargin">Futures Margin:</label>
+      <input type="futuresMargin" [(ngModel)]="user.futuresMargin" placeholder="Add Futures Margin" name="futuresMargin" class="form-control" id="futuresMargin">
+    </div>
+
+    <div class="form-group">
+      <label for="futuresName">Futures Name:</label>
+      <input type="futuresName" [(ngModel)]="user.futuresName" placeholder="Add Futures Name" name="futuresName" class="form-control" id="futuresName">
+    </div>
+
+    <div class="form-group">
+      <label for="futuresSymbol">Futures Symbol:</label>
+      <input type="futuresSymbol" [(ngModel)]="user.futuresSymbol" placeholder="Add Futures Symbol" name="futuresSymbol" class="form-control" id="futuresSymbol">
+    </div>
+
+    <button class="btn btn-success" (click)="createContract()">Create</button>
+  </form>
+</div>

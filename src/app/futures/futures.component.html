@@ -1,0 +1,24 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>futuresGroup</th>
+      <th>futuresMargin</th>
+      <th>futuresName</th>
+      <th>futuresSymbol</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let contract of futures">
+      <td>{{contract.id}}</td>
+      <td>{{contract.futuresGroup}}</td>
+      <td>{{contract.futuresMargin}}</td>
+      <td>{{contract.futuresName}}</td>
+      <td>{{contract.futuresSymbol}}</td>
+      <td><button class="btn btn-danger" (click)="deleteContract(contract)"> Delete Contract</button></td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
